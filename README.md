@@ -1,7 +1,6 @@
 # Front end -
 
 ## Getting Started
-First, run the development server:
 
 1. Download source code
 2. Open your IDE. (Example. Visual Studio)
@@ -29,7 +28,6 @@ yarn dev
 # Back end -
 
 ## Getting Started
-First install mysql workbench:
 
 1. Download via https://dev.mysql.com/downloads/workbench/
 2. Go thorough installation process - 

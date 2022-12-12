@@ -52,7 +52,7 @@ const handler = async (req, res) => {
       try {
         const salt = bcrypt.genSaltSync(10);
         const hash = bcrypt.hashSync(verify.password, salt);
-        const query = `INSERT INTO user values (uuid(), ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIME())`;
+        const query = `INSERT INTO user values (uuid(), ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIME(), ?, ?)`;
         const values = [
           `${verify.firstName}`,
           `${verify.lastName}`,
@@ -64,6 +64,8 @@ const handler = async (req, res) => {
           `https://avatars.dicebear.com/api/initials/${
             verify.firstName + " " + verify.lastName
           }.png`,
+          `${verify.question}`,
+          `${verify.answer}`,
         ];
 
         const results = await connect({ query, values });

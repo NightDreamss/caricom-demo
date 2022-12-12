@@ -22,7 +22,9 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. Setup backend below 
+
+7. Once backend is setup then open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 # Back end -
 

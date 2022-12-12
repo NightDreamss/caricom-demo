@@ -1,8 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Front end -
 
 ## Getting Started
-
 First, run the development server:
+
+1. Download source code
+2. Open your IDE. (Example. Visual Studio)
+3. Navigate the source code folder
+4. Run command below in a terminal in your IDE, depending on your package manager.
+
+```bash
+npm install
+# or
+yarn install
+```
+
+5. Run command below
 
 ```bash
 npm run dev
@@ -12,23 +24,24 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Back end -
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Getting Started
+First install mysql workbench:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Download via https://dev.mysql.com/downloads/workbench/
+2. Go thorough installation process - 
 
-## Learn More
+### Requires 
+user: root
+password: svz1
 
-To learn more about Next.js, take a look at the following resources:
+### Note -
+If you wish to use another user/password the details can be changed in libs/mysqlDB.js in the front end folder.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Click Server on the main tool bar.
+4. Select Data Import.
+5. The file is located within the front end folder above.
+6. Navigate the source to the front end folder/sql/caricom_user.sql file.
+7. Select the file caricom_user.sql to load, and click OK.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
